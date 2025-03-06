@@ -1,0 +1,14 @@
+prefix=/scratch/postgres-citus/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libecpg
+Description: PostgreSQL libecpg library
+URL: https://www.postgresql.org/
+Version: 16.0
+Requires: 
+Requires.private: libpq, libpgtypes
+Cflags: -I${includedir}
+Libs: -L${libdir} -lecpg
+Libs.private: -L/scratch/postgres-citus/local/lib -lpgcommon -lpgport -lpq -lm

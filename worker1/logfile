@@ -1,0 +1,31 @@
+2025-03-06 14:58:45.505 EST [2778766] LOG:  starting PostgreSQL 16.0 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-22), 64-bit
+2025-03-06 14:58:45.506 EST [2778766] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-03-06 14:58:45.506 EST [2778766] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-03-06 14:58:45.506 EST [2778766] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-03-06 14:58:45.506 EST [2778766] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-03-06 14:58:45.506 EST [2778766] WARNING:  could not create listen socket for "localhost"
+2025-03-06 14:58:45.506 EST [2778766] FATAL:  could not create any TCP/IP sockets
+2025-03-06 14:58:45.509 EST [2778766] LOG:  database system is shut down
+2025-03-06 15:04:02.516 EST [2785381] LOG:  starting PostgreSQL 16.0 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-22), 64-bit
+2025-03-06 15:04:02.516 EST [2785381] LOG:  listening on IPv4 address "0.0.0.0", port 5434
+2025-03-06 15:04:02.517 EST [2785381] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-03-06 15:04:02.520 EST [2785384] LOG:  database system was shut down at 2025-03-06 15:04:00 EST
+2025-03-06 15:04:02.525 EST [2785381] LOG:  database system is ready to accept connections
+2025-03-06 15:08:28.553 EST [2793280] FATAL:  role "citus" does not exist
+2025-03-06 15:08:37.663 EST [2793445] FATAL:  role "citus" does not exist
+2025-03-06 15:09:02.564 EST [2785382] LOG:  checkpoint starting: time
+2025-03-06 15:09:06.777 EST [2785382] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.209 s, sync=0.001 s, total=4.213 s; sync files=11, longest=0.001 s, average=0.001 s; distance=263 kB, estimate=263 kB; lsn=0/15269E8, redo lsn=0/15269B0
+2025-03-06 15:10:06.554 EST [2795033] FATAL:  role "postgres" does not exist
+2025-03-06 15:11:52.487 EST [2796628] ERROR:  function master_add_node(unknown, integer) does not exist at character 15
+2025-03-06 15:11:52.487 EST [2796628] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 15:11:52.487 EST [2796628] STATEMENT:  SELECT * FROM master_add_node('localhost', 5434);
+2025-03-06 15:12:38.181 EST [2796628] ERROR:  Citus can only be loaded via shared_preload_libraries
+2025-03-06 15:12:38.181 EST [2796628] HINT:  Add citus to shared_preload_libraries configuration variable in postgresql.conf in master and workers. Note that citus should be at the beginning of shared_preload_libraries.
+2025-03-06 15:12:38.181 EST [2796628] STATEMENT:  CREATE EXTENSION citus;
+2025-03-06 15:13:34.232 EST [2785381] LOG:  received fast shutdown request
+2025-03-06 15:13:34.232 EST [2785381] LOG:  aborting any active transactions
+2025-03-06 15:13:34.234 EST [2785381] LOG:  background worker "logical replication launcher" (PID 2785388) exited with exit code 1
+2025-03-06 15:13:34.234 EST [2785382] LOG:  shutting down
+2025-03-06 15:13:34.234 EST [2785382] LOG:  checkpoint starting: shutdown immediate
+2025-03-06 15:13:34.242 EST [2785382] LOG:  checkpoint complete: wrote 32 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.002 s, total=0.009 s; sync files=28, longest=0.002 s, average=0.001 s; distance=71 kB, estimate=244 kB; lsn=0/1538948, redo lsn=0/1538948
+2025-03-06 15:13:34.253 EST [2785381] LOG:  database system is shut down
