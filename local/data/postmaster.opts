@@ -1,1 +1,0 @@
-/scratch/postgres-citus/local/bin/postgres "-D" "/scratch/postgres-citus/local/data"
